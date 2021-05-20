@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f6f9fc"
+    tools:context="com.example.dell.designapp.fragment.ExpensesFragment"
+    android:id="@+id/relativelayout"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/availability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:layout_marginTop="125dp"
+                android:text="TOTAL EXPENSES"
+                android:layout_below="@id/accounts"
+                android:gravity="left"
+                android:layout_marginLeft="30dp"
+                android:textColor="#557be2"
+                />
+
+            <TextView
+                android:id="@+id/dollar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="50dp"
+                android:text="1745"
+                android:gravity="left"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="25dp"
+                android:textColor="#4f6c8d"
+                />
+
+            <TextView
+                android:id="@+id/dollarsign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginTop="74dp"
+                android:text="$"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#a7b5c6"
+                />
+
+            <TextView
+                android:id="@+id/cents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginTop="74dp"
+                android:text=".30"
+                android:gravity="left"
+                android:layout_marginLeft="150dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#a7b5c6"
+                />
+
+            <TextView
+                android:id="@+id/availabilit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:layout_marginTop="125dp"
+                android:text="PROJECTED ENDING CASH BALANCE"
+                android:layout_below="@id/accounts"
+                android:gravity="end"
+                android:layout_marginRight="5dp"
+                android:textColor="#557be2"
+                />
+
+            <TextView
+                android:id="@+id/dolla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="50dp"
+                android:text="8126"
+                android:gravity="end"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="25dp"
+                android:textColor="#4f6c8d"
+                />
+
+            <TextView
+                android:id="@+id/dollarsig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginTop="74dp"
+                android:text="$"
+                android:gravity="center"
+                android:layout_marginLeft="55dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#a7b5c6"
+                />
+
+            <TextView
+                android:id="@+id/cent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginTop="74dp"
+                android:text=".30"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#a7b5c6"
+                />
+            <Button
+                android:id="@+id/all"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:background="#a7b5c6"
+                android:text="ALL"
+                android:layout_marginTop="60dp"
+                android:layout_below="@+id/availabilit"
+                android:textColor="#c4002a"/>
+
+            <Button
+                android:id="@+id/incidentals"
+                android:layout_width="205dp"
+                android:layout_toRightOf="@+id/all"
+                android:layout_height="wrap_content"
+                android:background="#a7b5c6"
+                android:layout_marginTop="60dp"
+                android:layout_below="@id/availabilit"
+                android:text="INCIDENTALS         +"
+                android:textColor="#484848"/>
+
+            <TextView
+                android:id="@+id/ashh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="110dp"
+                android:layout_below="@id/availabilit"
+                android:background="#f6f9fc" />
+
+
+            <TextView
+                android:id="@+id/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="335dp"
+                android:layout_marginTop="100dp"
+                android:layout_below="@id/dollar"
+                android:background="#ffffff" />
+
+            <TextView
+                android:id="@+id/applestore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Apple Store"
+                android:layout_below="@id/ashh"
+                android:layout_marginLeft="10dp"
+                android:textColor="#4f6c8d"
+                />
+
+            <TextView
+                android:id="@+id/dateone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:text="03/08/2016"
+                android:layout_below="@id/applestore"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#a3adb4"
+                />
+
+            <TextView
+                android:id="@+id/billone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_marginTop="16dp"
+                android:text="- 299"
+                android:layout_below="@id/ashh"
+                android:gravity="end"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#f96b6b"
+                />
+
+            <TextView
+                android:id="@+id/billonesmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:layout_marginTop="22dp"
+                android:text=".95"
+                android:layout_below="@id/ashh"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#f96b6b"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/listone"
+                android:layout_height="1dp"
+                android:padding="5dp"
+                android:layout_below="@id/dateone"
+                android:background="#bec9d1" />
+
+            <TextView
+                android:id="@+id/ducatitrumpnewyork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Ducati Trump New York"
+                android:layout_below="@id/listone"
+                android:layout_marginLeft="10dp"
+                android:textColor="#4f6c8d"
+                />
+
+            <TextView
+                android:id="@+id/datetwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:text="02/16/2016"
+                android:layout_below="@id/ducatitrumpnewyork"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#a3adb4"
+                />
+
+            <TextView
+                android:id="@+id/billtwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_marginTop="29dp"
+                android:text="- 1,182"
+                android:layout_below="@id/billone"
+                android:gravity="end"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#f96b6b"
+                />
+
+            <TextView
+                android:id="@+id/billtwosmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:layout_marginTop="21dp"
+                android:text=".00"
+                android:layout_below="@id/listone"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#f96b6b"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/listtwo"
+                android:layout_height="1dp"
+                android:padding="5dp"
+                android:layout_below="@id/datetwo"
+                android:background="#bec9d1" />
+
+            <TextView
+                android:id="@+id/yebocreative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Yebo Creative"
+                android:layout_below="@id/listtwo"
+                android:layout_marginLeft="10dp"
+                android:textColor="#4f6c8d"
+                />
+
+            <TextView
+                android:id="@+id/datethree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:text="02/06/2016"
+                android:layout_below="@id/yebocreative"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#a3adb4"
+                />
+
+            <TextView
+                android:id="@+id/billthree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_marginTop="29dp"
+                android:text="- 99"
+                android:layout_below="@id/billtwo"
+                android:gravity="end"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#f96b6b"
+                />
+
+            <TextView
+                android:id="@+id/billthreesmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:layout_marginTop="22dp"
+                android:text=".99"
+                android:layout_below="@id/listtwo"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#f96b6b"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/listthree"
+                android:layout_height="1dp"
+                android:padding="5dp"
+                android:layout_below="@id/datethree"
+                android:background="#bec9d1" />
+
+            <TextView
+                android:id="@+id/marvelprototyping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Marvel Prototyping"
+                android:layout_below="@id/listthree"
+                android:layout_marginLeft="10dp"
+                android:textColor="#4f6c8d"
+                />
+
+            <TextView
+                android:id="@+id/datefour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:text="02/06/2016"
+                android:layout_below="@id/marvelprototyping"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#a3adb4"
+                />
+
+            <TextView
+                android:id="@+id/billfour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_marginTop="29dp"
+                android:text="- 42"
+                android:layout_below="@id/billthree"
+                android:gravity="end"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#f96b6b"
+                />
+
+            <TextView
+                android:id="@+id/billfoursmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:layout_marginTop="22dp"
+                android:text=".00"
+                android:layout_below="@id/listthree"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#f96b6b"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell.designapp">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.hardware.camera"/>
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignInOne" />
+        <activity android:name=".SignInTwo" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".AddProfilePic" />
+        <activity android:name=".AccountCreated" />
+        <activity android:name=".Recycler" />
+        <activity android:name=".RecyclerViewAdapter" />
+        <activity android:name=".AddPaymentMethod" />
+        <activity android:name=".RecyclerViewAdapterTwo" />
+        <activity android:name=".InputCardInfo" />
+        <activity android:name=".ConnectFinances" />
+        <activity android:name=".AutoSave" />
+        <activity android:name=".CategoryTransactions" />
+        <activity android:name=".NewBillSelectRecurringTransaction" />
+        <activity android:name=".ABetterCard" />
+        <activity android:name=".Overview" />
+        <activity android:name=".fragment.ExpensesFragment" />
+        <activity android:name=".fragment.BillsFragment" />
+        <activity android:name=".fragment.AllowancesFragment" />
+        <activity android:name=".NewBillFinish" />
+        <activity android:name=".AddNewIncidental" />
+        <activity android:name=".Expenses" />
+        <activity android:name=".InputAccountInfo" />
+        <activity android:name=".RecyclerViewAdapterThree" />
+        <activity android:name=".OverviewSetWeeklyBudget" />
+        <activity android:name=".AllowancesSetBudget" />
+        <activity android:name=".fragment.HomeFragment" />
+        <activity android:name=".fragment.ManageFragment" />
+        <activity android:name=".fragment.AccountFragment" />
+        <activity android:name=".fragment.AnalysisFragment" />
+        <activity android:name=".BottomNavigationn" />
+        <activity android:name=".Graph"></activity>
+    </application>
+
+</manifest>

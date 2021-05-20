@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f8fbfd"
+    tools:context="com.example.dell.designapp.fragment.AllowancesFragment"
+    android:id="@+id/relativelayout"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/remaining"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:layout_marginTop="20dp"
+                android:text="REMAINING"
+                android:layout_marginLeft="20dp"
+                android:textColor="#d5d5d5"
+                />
+           <TableLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/tableone"
+               android:layout_below="@id/remaining"
+               android:layout_marginTop="9dp"
+               android:background="#ffffff"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp">
+
+               <TableRow
+                   android:id="@+id/firstrow"
+                   android:layout_width="match_parent"
+                   android:layout_height="190dp">
+
+                   <ImageView
+                       android:id="@+id/groceriesimg"
+                       android:layout_width="25dp"
+                       android:layout_height="25dp"
+                       android:layout_below="@+id/remaining"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginTop="17dp"
+                       android:src="@drawable/groceries" />
+
+                   <TextView
+                       android:id="@+id/groceries"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Groceries"
+                       android:textColor="#000000"
+                       android:layout_marginLeft="15dp"
+                       android:layout_below="@id/remaining"
+                       android:layout_marginTop="17dp"
+                       android:textSize="16dp" />
+
+                   <TextView
+                       android:id="@+id/ninetypercentused"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="90% used"
+                       android:padding="7dp"
+                       android:layout_marginTop="35.5dp"
+                       android:textColor="#a5a5a5"
+                       android:textSize="10dp" />
+
+                   <TextView
+                       android:id="@+id/dollarthreethirtyseven"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="$337"
+                       android:layout_marginLeft="150dp"
+                       android:layout_marginTop="16dp"
+                       android:textColor="#21cb7b"
+                       android:textSize="16dp" />
+
+               </TableRow>
+           </TableLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/listone"
+                android:layout_height="1.5dp"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="50dp"
+                android:layout_below="@id/tableone"
+                android:background="#ff5201" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tabletwo"
+                android:layout_below="@id/tableone"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TableRow
+                    android:id="@+id/secondrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp">
+
+                    <ImageView
+                        android:id="@+id/gasimg"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/tableone"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="17dp"
+                        android:src="@drawable/gas" />
+
+                    <TextView
+                        android:id="@+id/gas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gas"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@id/tableone"
+                        android:layout_marginTop="17dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/seventyfivepercentused"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="75% used"
+                        android:padding="7dp"
+                        android:layout_marginTop="35.5dp"
+                        android:textColor="#a5a5a5"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/dollaronetwentyfive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$125"
+                        android:layout_marginLeft="185dp"
+                        android:layout_marginTop="16dp"
+                        android:textColor="#21cb7b"
+                        android:textSize="16dp" />
+
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/listtwo"
+                android:layout_height="1.5dp"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="100dp"
+                android:layout_below="@id/tabletwo"
+                android:background="#ffad01" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tablethree"
+                android:layout_below="@id/tabletwo"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TableRow
+                    android:id="@+id/thirdrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp">
+
+                    <ImageView
+                        android:id="@+id/entertainmentimg"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/tabletwo"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="17dp"
+                        android:src="@drawable/entertainment" />
+
+                    <TextView
+                        android:id="@+id/entertainment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Entertainment"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@id/tabletwo"
+                        android:layout_marginTop="17dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/fifteenpercentused"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15% used"
+                        android:padding="7dp"
+                        android:layout_marginTop="35.5dp"
+                        android:textColor="#a5a5a5"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/dollarseventy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$70"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginTop="16dp"
+                        android:textColor="#21cb7b"
+                        android:textSize="16dp" />
+
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/listthree"
+                android:layout_height="1.5dp"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="300dp"
+                android:layout_below="@id/tablethree"
+                android:background="#01f8ff" />
+
+            <TextView
+                android:id="@+id/full"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/tablethree"
+                android:text="FULL"
+                android:layout_marginLeft="20dp"
+                android:textColor="#d5d5d5"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tablefour"
+                android:layout_below="@id/full"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TableRow
+                    android:id="@+id/fourthrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp">
+
+                    <ImageView
+                        android:id="@+id/shoppingimg"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/tablethree"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="17dp"
+                        android:src="@drawable/shopping" />
+
+                    <TextView
+                        android:id="@+id/shopping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shopping"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@id/full"
+                        android:layout_marginTop="17dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/hundreddollarused"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100$ used"
+                        android:padding="7dp"
+                        android:layout_marginTop="35.5dp"
+                        android:textColor="#a5a5a5"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/dollareighthundred"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$800"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginTop="16dp"
+                        android:textColor="#ff5201"
+                        android:textSize="17.5dp" />
+
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tablefive"
+                android:layout_below="@id/tablefour"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TableRow
+                    android:id="@+id/fifthrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp">
+
+                    <ImageView
+                        android:id="@+id/autoandtransportimg"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/tablefour"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="17dp"
+                        android:src="@drawable/shopping" />
+
+                    <TextView
+                        android:id="@+id/sutoandtransport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Auto and Transport"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@id/tablefour"
+                        android:layout_marginTop="17dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/hundredpercentused"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100% used"
+                        android:padding="7dp"
+                        android:layout_marginTop="35.5dp"
+                        android:textColor="#a5a5a5"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/dollarfivehundred"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$500"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="16dp"
+                        android:textColor="#ff5201"
+                        android:textSize="17.5dp" />
+
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tablesix"
+                android:layout_below="@id/tablefive"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff">
+
+                <TableRow
+                    android:id="@+id/sixthrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+
+                    <TextView
+                        android:id="@+id/lastline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 of your allowances are full"
+                        android:textColor="#3c3c3c"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@id/tablefive"
+                        android:layout_marginTop="17dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/lastnumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$1200 under budget"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="16dp"
+                        android:textColor="#21cb7b"
+                        android:textSize="17dp" />
+
+                </TableRow>
+            </TableLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

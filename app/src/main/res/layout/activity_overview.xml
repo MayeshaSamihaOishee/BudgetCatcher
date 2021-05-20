@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f6f9fc"
+    tools:context="com.example.dell.designapp.Overview"
+    android:id="@+id/relativelayout"
+    android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="47dp"
+                android:background="@color/colorPrimaryDark" />
+
+        <at.markushi.ui.CircleButton
+            android:layout_height="21dp"
+            android:layout_width="23dp"
+            android:layout_marginTop="5dp"
+            app:cb_color="@color/colorPrimaryDark"
+            android:layout_toRightOf="@id/menu"
+            android:src="@drawable/ic_add_black_24dp"
+            android:layout_marginLeft="255dp"
+            android:onClick="setgasbudget"
+            />
+
+            <at.markushi.ui.CircleButton
+                android:layout_height="21dp"
+                android:layout_width="23dp"
+                android:id="@+id/menu"
+                android:layout_marginTop="5dp"
+                app:cb_color="@color/colorPrimaryDark"
+                android:src="@drawable/ic_chevron_left_black_24dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Overview"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                />
+
+            <at.markushi.ui.CircleButton
+                android:layout_height="21dp"
+                android:layout_width="23dp"
+                android:layout_marginTop="5dp"
+                app:cb_color="@color/colorPrimaryDark"
+                android:layout_toRightOf="@id/menu"
+                android:src="@drawable/ic_settings_black_24dp"
+                android:layout_marginLeft="296dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="90dp"
+                android:id="@+id/grey"
+                android:layout_below="@id/blue"
+                android:background="#232450" />
+
+            <TextView
+                android:id="@+id/texttt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_below="@id/overview"
+                android:text="Nov 10, 2017"
+                android:layout_marginTop="40dp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="left"
+                android:gravity="left"
+                />
+
+            <at.markushi.ui.CircleButton
+                android:layout_height="21dp"
+                android:layout_width="23dp"
+                android:id="@+id/backleft"
+                android:layout_below="@id/blue"
+                android:layout_marginTop="25dp"
+                app:cb_color="#232450"
+                android:src="@drawable/ic_chevron_left_black_24dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_below="@id/overview"
+                android:text="Nov 17, 2017"
+                android:layout_marginTop="40dp"
+                android:textColor="#ffffff"
+                android:layout_marginRight="40dp"
+                android:layout_gravity="end"
+                android:gravity="end"
+                />
+
+            <TextView
+                android:id="@+id/too"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/overview"
+                android:text="To"
+                android:layout_marginTop="40dp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+            <at.markushi.ui.CircleButton
+                android:layout_height="21dp"
+                android:layout_width="23dp"
+                android:id="@+id/backright"
+                android:layout_below="@id/blue"
+                android:layout_marginTop="25dp"
+                app:cb_color="#232450"
+                android:src="@drawable/ic_chevron_right_black_24dp"
+                android:layout_marginLeft="380dp"
+                />
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/appbar"
+                android:layout_below="@id/grey">
+
+                <android.support.design.widget.TabLayout
+                    style="@style/AppTabLayout"
+                    app:tabTextAppearance="@style/AppTabTextAppearance"
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    app:tabMode="fixed"
+                    app:tabIndicatorColor="@color/colorTabSelected"
+                    android:background="#ffffff"
+                    app:tabGravity="fill">
+                </android.support.design.widget.TabLayout>
+            </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_below="@id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </android.support.v4.view.ViewPager>
+
+        </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
