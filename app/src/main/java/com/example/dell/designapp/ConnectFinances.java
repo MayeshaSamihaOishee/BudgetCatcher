@@ -15,6 +15,6 @@ public class ConnectFinances extends AppCompatActivity {
 
     public void okletsdoit(View view) {
         Intent intent = new Intent(ConnectFinances.this, AddPaymentMethod.class);
-        startActivity(intent);
+        startActivity(intent); 
     }
 }

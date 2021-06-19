@@ -15,6 +15,6 @@ public class CategoryTransactions extends AppCompatActivity {
 
     public void posted(View view) {
         Intent intent = new Intent(CategoryTransactions.this, Graph.class);
-        startActivity(intent);
+        startActivity(intent); 
     }
 }
